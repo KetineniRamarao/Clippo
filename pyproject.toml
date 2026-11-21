@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clippo"
+version = "1.0.0"
+description = "High-performance autonomous video ingestion and shorts production engine."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Ketineni Rama Rao" }]
+dependencies = []
+
+[project.scripts]
+clippo = "clippo.cli:main"

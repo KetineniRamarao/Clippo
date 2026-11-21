@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Media and Raw Videos (Strictly ignored)
+*.mxf
+*.MXF
+*.mov
+*.MOV
+*.mp4
+*.MP4
+*.avi
+*.mkv
+*.webm
+*.wav
+*.mp3
+
+# Scratch & Temporary Render Artifacts
+_temp_scratch/
+temp_scratch/
+_norm_*/
+_dyn_*/
+*.tmp
+*.log
+
+# Operating System & IDE Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local Config Overrides
+clippo.yaml
+clippo.local.yaml

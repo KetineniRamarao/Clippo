@@ -1,0 +1,19 @@
+clippo:
+  pipeline:
+    num_clips: auto         # Number of clips to extract ("auto" or integer, e.g. 5)
+    min_duration_sec: 45    # Minimum length per vertical short
+    max_duration_sec: 65    # Maximum length per vertical short
+    target_aspect: "9:16"   # Output aspect ratio for vertical shorts
+    concurrency: 3          # Parallel video encoding workers
+
+  audio:
+    dynamic_leveling: true  # Real-time AGC for quiet vs loud field speech
+    target_lufs: -14.0      # EBU R128 integrated loudness target
+    true_peak_db: -1.5      # Maximum peak ceiling to prevent distortion
+
+  branding:
+    logo_path: ""           # Optional watermark path (MOV with Alpha, WebM, or PNG)
+    watermark_position: "top-right"
+
+  system:
+    use_nvenc: true         # Enable NVIDIA GPU hardware encoding when available
